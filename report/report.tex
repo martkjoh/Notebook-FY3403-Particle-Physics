@@ -45,8 +45,8 @@
     \section*{Introduction}
     Calculations of Feynman diagrams in particle physics can be long and tiresome, and computer aided symbolic calculations are therefore an important reason.
     This project will focus specifically on calculations involving so called gamma matrices, which shows up in quantum electrodynamics \cite{griffiths}.
-    This project aims to use Jupyter Notebooks, an solution for combing text, equations and code, with Python and SymPy to make educational resources introducing students to this way of doing calculations. 
-    SymPy\footnote{\url{https://www.sympy.org/en/index.html}} is a library for Python which enables creation and manipulation of symbolic expressions, such as integration, differentiation linear algebra and more.
+    This project aims to use Jupyter Notebooks, a solution for combing text, equations and code, with Python and SymPy to make educational resources introducing students to this way of doing calculations. 
+    SymPy\footnote{\url{https://www.sympy.org/en/index.html}} is a library for Python which enables creation and manipulation of symbolic expressions, such as integration, differentiation, linear algebra and more.
 
     \section*{Method}
     Firstly, many students have no familiarity with SymPy, so a short introductory notebook was made.
@@ -54,7 +54,7 @@
     This can, however, be a resource for other than just those who take particle physics, as SymPy is a powerful tool which can be used for a large variety of calculations.
     The plan was to use the SymPy high energy physics (hep) package.\footnote{\url{https://docs.sympy.org/latest/modules/physics/hep/index.html}}, which is made to handle gamma matrices.
     This is an abstract implementation of the gamma matrices, meaning that the objects are not represented as explicit matrices, but rather only by their algebraic rules, utilizing SymPy’s tensor-objects.
-    The implementation notation $p_\mu \gamma^\mu$, where one does not have to write the objects explicitly as $p_0 \gamma^0 + p_1 \gamma^1 +...$.
+    The implementation mirrors the notation $p_\mu \gamma^\mu$, where one does not have to write the objects explicitly as $p_0 \gamma^0 + p_1 \gamma^1 +...$.
     This is an important goal, as it allows for focus on the physics and less messy algebra.
     However, the SymPy package is broken, and not up to the task.
     It does not handle any more complication than the simplest expression of the form $\Tr(\gamma^\mu ...
@@ -86,13 +86,13 @@
     The gamma matrices can be described as a more abstract mathematical object than matrices.
     They are members of Clifford algebra (or geometric algebra).
     The manipulation of gamma-matrices can therefore be implemented by libraries that deal with these.
-    Galgebra (\url{https://galgebra.readthedocs.io/en/latest/}) is a library with symbolic implementations of geometric algebra.
+    Galgebra\footnote{\url{https://galgebra.readthedocs.io/en/latest/}} is a library with symbolic implementations of geometric algebra.
     It is possible to implement at least part of the gamma-matrix algebra, as shown in one of the notebooks, however it is not satisfactory.
     This does however show that libraries that deal with geometric algebras or Clifford algebras are possible candidates to use in further development.
     
 
     If this project is to be taken up again, I see some possible paths for inquiry.
-    SageMath is a powerful CAS based on python, and may have the capabilities for implementing gamma matrices.
+    SageMath is a powerful CAS based on Python, and may have the capabilities for implementing gamma matrices.
     It can also be used in Jupyter notebooks.
     Web page: \url{https://www.sagemath.org/}.
     Cadabra has implemented Clifford-algebras, and might be an alternative.
@@ -100,7 +100,7 @@
     Web page: \url{https://cadabra.science/ }
 
     \section*{Links}
-    GitHub repo, including all notebooks:\\
+    GitHub repo, including all notebooks made in this project:\\
     \url{https://github.com/martkjoh/Notebook-FY3403-Particle-Physics}
 
     \printbibliography
